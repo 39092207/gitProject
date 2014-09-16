@@ -3,7 +3,8 @@
 <head>
   <!-- meta -->
   <meta charset="utf-8"/>
-  <meta name='description' content='<%= config.description %>'>
+  <meta name='description' content='<%= config. description %>'>
+  <!--meta 用法不是很熟练？？？？？？-->
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <%
@@ -67,6 +68,10 @@
       <form id='search_form' class='navbar-search' action="/search">
         <input type='text' id='q' name='q' class='search-query span3' value=''/>
       </form>
+        <form id='search_form1' class='navbar-search' action="">
+            <input type='text' id='q1' name='q' class='search-query span3' value=''/>
+        </form>
+
       <ul class='nav pull-right'>
         <li><a href='/'>首页</a></li>
         <% if (typeof(current_user) !== 'undefined'){ %>
@@ -121,6 +126,9 @@
 
   </div>
 </div>
+
+
+
 <div id="sidebar-mask"></div>
 <script defer>
   (function (i, s, o, g, r, a, m) {
@@ -139,5 +147,6 @@
   ga('send', 'pageview');
 
 </script>
+
 </body>
 </html>

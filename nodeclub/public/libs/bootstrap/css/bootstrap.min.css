@@ -3937,9 +3937,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
     font-size: 13px;
     font-weight: normal;
     line-height: 1;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px
+
 }
 
 .navbar-static-top {

@@ -40,6 +40,7 @@ setInterval(function () {
 // END 主页的缓存工作
 
 exports.index = function (req, res, next) {
+    debugger;
   var page = parseInt(req.query.page, 10) || 1;
   page = page > 0 ? page : 1;
   var tab = req.query.tab || req.session.tab || 'all';

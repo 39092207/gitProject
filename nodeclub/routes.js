@@ -28,10 +28,11 @@ var config = require('./config');
 
 module.exports = function (app) {
   // home page
+    debugger;
   app.get('/', site.index);
 
   // sign up, login, logout
-  if (config.allow_sign_up) {
+  if (config.allow_sign_up) {   //允许直接注册（否则只能走github的方式）
     app.get('/signup', sign.showSignup);  // 跳转到注册页面
     app.post('/signup', sign.signup);  // 提交注册信息
   } else {
